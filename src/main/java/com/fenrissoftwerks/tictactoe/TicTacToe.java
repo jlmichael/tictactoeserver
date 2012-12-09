@@ -19,6 +19,7 @@ public class TicTacToe extends HttpServlet {
 
         try {
             server.startServer();
+            server.startWebSocketServer();
         } catch (Exception e) {
             System.out.println("Unhandled exception while trying to start server");
             e.printStackTrace();
